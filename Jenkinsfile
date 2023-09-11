@@ -1,7 +1,7 @@
 pipeline{
   agent none
   stages{
-    stage("Update GIT"){
+    stage("Change GIT deployment"){
       steps{
         script {
           catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
