@@ -1,5 +1,9 @@
 pipeline{
-  agent none
+  agent {
+    node {
+      label 'built-in'
+    }
+  }
   stages{
     stage("Change GIT deployment"){
       steps{
